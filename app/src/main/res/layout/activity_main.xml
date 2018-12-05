@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <TextView
+        android:id="@+id/editText5"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="111dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Favorite TV Show"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <EditText
+        android:id="@+id/etNewEmail"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_toEndOf="@+id/editText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/etNewTvShow"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_toEndOf="@+id/editText5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="143dp"
+        android:text="Add Data" />
+
+    <Button
+        android:id="@+id/btnViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAddData"
+        android:layout_toEndOf="@+id/btnAddData"
+        android:text="View Data" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAddData"
+        android:layout_toEndOf="@+id/btnViewData"
+        android:text="Update Data" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="211dp"
+        android:text="ID"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:hint="Use to Update or Delete"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etID"
+        android:layout_centerVertical="true"
+        android:text="Delete" />
+
+</RelativeLayout>
